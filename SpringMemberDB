@@ -1,0 +1,12 @@
+#2024-06-20------------------------------------------------------------------------------------------------------------
+create table t_member (
+	id varchar(25) not null primary key,
+    pwd  varchar(25) not null,
+    name varchar(25) not null,
+    email varchar(50),
+    joinDate timestamp default current_timestamp
+);
+
+select * from t_member;
+
+drop table t_member;

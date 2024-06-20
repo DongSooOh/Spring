@@ -1,11 +1,11 @@
-<%@ page language="java" contentType="text/html; charset="utf-8" pageEncoding="utf-8"
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"
 isELIgnored="false" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
-<%
-	request.setCharacterEncoding("utf-8");
-%>
+<!--<%-->
+<!--	request.setCharacterEncoding("utf-8");-->
+<!--%>-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +19,7 @@ isELIgnored="false" %>
 			}
 		</script>
 	</c:when>
-<c:choose>			
+</c:choose>		
 </head>
 <body>
 	<form name="frmLogin" method="post" action="${contextPath}/member/login.do">

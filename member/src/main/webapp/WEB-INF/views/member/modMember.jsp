@@ -1,10 +1,10 @@
-<%@ page language="java" contentType="text/html; charset="utf-8" pageEncoding="utf-8"
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"
 isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
-<%
-	request.setCharacterEncoding("utf-8");
-%>
+<!--<%-->
+<!--	request.setCharacterEncoding("utf-8");-->
+<!--%>-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,7 +38,7 @@ isELIgnored="false" %>
 			</tr>
 			<tr>
 				<td width="200"><p>&nbsp;</p></td>
-				<td width="400"><input type="submit" value="수정하기"><input type="reset" value="다시 입력"></td>
+				<td width="400"><input type="submit" value="수정하기"> <input type="reset" value="다시 입력"></td>
 			</tr>
 		</table>
 	</form>

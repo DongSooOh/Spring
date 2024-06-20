@@ -4,12 +4,28 @@ import java.sql.Date;
 
 import org.springframework.stereotype.Component;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
+
 @Component("memberVO")
 public class MemberVO {
+	@NotEmpty(message = "아이디는 필수 항목입니다.")
+	@Size(min = 3, max = 11, message = "아이디는 최소 3자에서 최대 11자여야 합니다.")
 	private String id;
+
+	@NotEmpty(message = "비밀번호는 필수 항목입니다.")
+	@Size(min = 3, max = 11, message = "비밀번호는 최소 3자에서 최대 11자여야 합니다.")
 	private String pwd;
+
+	@NotEmpty(message = "이름은 필수 항목입니다.")
+	@Size(min = 2, max = 11, message = "이름은 최소 2자에서 최대 11자여야 합니다.")
 	private String name;
+
+	@Email(message = "유효한 이메일 주소를 입력해주세요.")
+	@NotEmpty(message = "이메일은 필수 항목입니다.")
 	private String email;
+	
 	private Date joinDate;
 
 	public MemberVO() {

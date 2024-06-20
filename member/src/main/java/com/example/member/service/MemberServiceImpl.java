@@ -36,4 +36,8 @@ public class MemberServiceImpl implements MemberService {
 	public MemberVO login(MemberVO memberVO) throws Exception {
 		return memberDAO.loginById(memberVO);
 	}
+	
+	public void updateMember(MemberVO member) throws Exception {
+		memberDAO.updateMember(member);
+	}
 }
